@@ -26,7 +26,7 @@ import GMMchi_scs_pipeline
 ```
 ## Intuition: How GMMchi_scs_pipeline Works in Postprocessing scRNA-seq Data
 
-Here, we outline each of the step included in the postprocessing pipeline:
+Here, we outline each of the steps included in the postprocessing pipeline:
 
 1) Remove empty barcodes
 2) Remove doublets 
