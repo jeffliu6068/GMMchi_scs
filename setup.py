@@ -5,7 +5,7 @@ setup(
     version='0.1',
     author='Jeff Liu',
     author_email='jeffliu6068@gmail.com',
-    packages=['GMMchi_scs'],
+    packages=['GMMchi_single_cell_pipeline'],
     url='https://github.com/jeffliu6068/GMMchi_single_cell_pipeline',
     license='LICENSE.txt',
     description='Pre-print version of the GMMchi-based single cell postprocessing pipeline',
