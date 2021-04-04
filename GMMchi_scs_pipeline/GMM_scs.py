@@ -102,7 +102,7 @@ def housekeepinggene_filter(input_data):
     from tqdm import tqdm_notebook as tqdm
     from matplotlib import pyplot as plt
     import numpy as np
-    %run GMMchiV4.ipynb
+    import GMMchi
 
     print('removing barcodes with housekeeping genes under cutoff...')
 
@@ -114,7 +114,7 @@ def housekeepinggene_filter(input_data):
     housekeeping_cutoff = {}
 
     for gene in tqdm(housekeeping):
-        info, classif, categories, chi, bins, f = GMM_modelingt(gene, housekeeping_df, log2transform=True,
+        info, classif, categories, chi, bins, f = GMMchi.GMM_modelingt(gene, housekeeping_df, log2transform=True,
                                                                 filt=0, meanf=0, stdf=0,
                                                                 graphs=True, verbosity=False, chisquaremethod=True, Single_tail_validation=False)
         try:
